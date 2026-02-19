@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Tracker</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#9333ea">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+    <div class="splash-content">
+        <div class="logo-circle">💪</div>
+        <h1>Gym Tracker</h1>
+    </div>
+</div>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2 class="logo">GYM</h2>
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="diet.html" class="nav-link">Diet</a>
+        <a href="workout.html" class="nav-link">Workout</a>
+        <a href="progress.html" class="nav-link">Progress</a>
+    </aside>
+
+    <main class="main">
+        <h2>Dashboard</h2>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Calories</h3>
+                <p class="big" id="calories">0</p>
+            </div>
+
+            <div class="card purple">
+                <h3>Workout</h3>
+                <p class="big" id="workoutTime">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Meals</h3>
+                <p class="big" id="meals">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Progress</h3>
+                <p class="big" id="progressText">0%</p>
+            </div>
+        </section>
+
+        <section class="activity">
+            <div class="card">
+                <h3>Goal</h3>
+                <div class="progress-circle">
+                    <span id="progressValue">0%</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Streak</h3>
+                <p class="big" id="streakCount">0 Days</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Achievements</h3>
+            <div class="badges">
+                <div class="badge locked" id="badgeFirst">🥇 First Workout</div>
+                <div class="badge locked" id="badge300">🏆 300 Minutes</div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<nav class="bottom-nav">
+    <a href="index.html">🏠</a>
+    <a href="diet.html">🍽</a>
+    <a href="workout.html">💪</a>
+    <a href="progress.html">📊</a>
+</nav>
+
+<script src="js/app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>
