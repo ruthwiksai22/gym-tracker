@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diet - Gym Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>GYM</h2>
+
+        <ul class="nav">
+    <li><a href="index.html" class="nav-link">Overview</a></li>
+    <li><a href="diet.html" class="nav-link">Diet</a></li>
+    <li><a href="workout.html" class="nav-link">Workout</a></li>
+    <li><a href="progress.html" class="nav-link">Progress</a></li>
+</ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Diet Tracker</h2>
+
+        <div class="card">
+            <h3>Add Today's Meals</h3>
+
+            <input id="breakfast" placeholder="Breakfast">
+            <input id="lunch" placeholder="Lunch">
+            <input id="dinner" placeholder="Dinner">
+
+            <button onclick="saveDiet()">Save Diet</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
