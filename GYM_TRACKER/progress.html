@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Progress - Gym Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>GYM</h2>
+
+        <ul class="nav">
+            <li><a href="index.html" class="nav-link">Overview</a></li>
+            <li><a href="diet.html" class="nav-link">Diet</a></li>
+            <li><a href="workout.html" class="nav-link">Workout</a></li>
+            <li><a href="progress.html" class="nav-link">Progress</a></li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <h2>Monthly Analytics</h2>
+
+        <div class="card">
+            <h3>Workout Minutes (Monthly)</h3>
+            <canvas id="monthlyChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
